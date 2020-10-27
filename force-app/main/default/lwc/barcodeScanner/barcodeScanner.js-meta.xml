@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Barcode Scanner</masterLabel>
+    <description>Scan a barcode on a mobile device</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>    
+        <targetConfig targets="lightning__FlowScreen">
+            <property label="Scan Immediately" name="scanImmediately" type="Boolean" default="false" role="inputOnly"
+                description="Immediately open camera to scan barcode (without first pressing the button)" 
+            />
+            <property label="Go to next page after scan" name="nextAfterScan" type="Boolean" default="false" role="inputOnly"
+                description="Automatically go to the next flow page after a successful scan" 
+            />            
+            <property label="Barcode" name="barcode" type="String" role="outputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
