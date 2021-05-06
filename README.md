@@ -9,6 +9,8 @@ available (as beta) the Winter'21 release.
 
 Use sfdx to deploy the LWC into your org:
 ```
+git clone https://github.com/mieckert/lwc-barcode-flow.git
+cd lwc-barcode-flow
 sfdx force:auth:web:login --set-alias <alias>
 sfdx force:source:deploy -u <username_or_alias> -o ./force-app
 ```
