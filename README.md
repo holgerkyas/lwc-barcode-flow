@@ -1,4 +1,4 @@
-# Lightning Web Component for Scanning Barcodes in a Flow
+# Lightning Web Component for Scanning Barcodes in a Flo
 
 This a Lightning Web Component (LWC) for scanning a barcode in a Flow
 from the Salesforce Mobile App.  It uses the 
